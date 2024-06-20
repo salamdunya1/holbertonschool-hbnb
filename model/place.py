@@ -7,7 +7,7 @@ from datetime import datetime
 class Place:
     def __init__(self, name, description, address, city_id, latitude, longitude,
                  host_id, number_of_rooms, bathrooms, price_per_night, max_guests):
-        self.id = uuid.uuid4()
+        self.id = str(uid.uuid4())
         self.name = name
         self.description = description
         self.address = address
