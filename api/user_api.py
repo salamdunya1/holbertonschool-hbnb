@@ -13,9 +13,9 @@ data_manager = DataManager()
 # Model definition for a User
 user_model = ns.model('User', {
     'id': fields.String(required=True, description='User ID'),
-    'username': fields.String(required=True, description='Username of the user'),
-    'email': fields.String(required=True, description='User email address'),
-    'password': fields.String(required=True, description='User password (hashed)'),
+    'email': fields.String(required=True, description='User email'),
+    'first_name': fields.String(required=True, description='User first name'),
+    'last_name': fields.String(required=True, description='User last name'),
     'created_at': fields.DateTime(
         required=True,
         description='Date and time when the user was created'
